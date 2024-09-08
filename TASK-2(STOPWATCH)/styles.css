@@ -1,0 +1,158 @@
+
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Stopwatch Container */
+        .stopwatch-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            width: 400px;
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Neon Glow Effect */
+        .stopwatch-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #ff007b, #00e6ff, #ff007b);
+            filter: blur(30px);
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        /* Title */
+        h1 {
+            font-size: 30px;
+            color: #f8f8f8;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #ff007b;
+        }
+
+        /* Time Display */
+        .time-display {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ffffff;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 114, 255, 0.7);
+            animation: pulse 2s infinite;
+        }
+
+        /* Pulse Animation */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .buttons .btn {
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: #ffffff;
+            background: linear-gradient(135deg, #ff007b, #ff4b2b);
+            transition: background 0.4s, transform 0.3s;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 71, 113, 0.7);
+        }
+
+        .buttons .btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 71, 113, 1);
+        }
+
+        #startStopBtn {
+            background: linear-gradient(135deg, #1D976C, #93F9B9);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(147, 249, 185, 0.7);
+        }
+
+        #resetBtn {
+            background: linear-gradient(135deg, #f857a6, #ff5858);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(248, 87, 166, 0.7);
+        }
+
+        #lapBtn {
+            background: linear-gradient(135deg, #396afc, #2948ff);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(57, 106, 252, 0.7);
+        }
+
+        /* Lap Times */
+        .laps {
+            margin-top: 30px;
+            text-align: left;
+            height: 150px;
+            overflow-y: auto;
+            padding-right: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+        }
+
+        .laps h2 {
+            font-size: 22px;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-shadow: 0 0 5px #ffffff;
+        }
+
+        #lapsList {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        #lapsList li {
+            padding: 8px 0;
+            font-size: 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            color: #e0e0e0;
+        }
+
+        /* Scrollbar Styling */
+        .laps::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .laps::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+    
