@@ -26,5 +26,5 @@ Animations: I honed my skills in CSS animations to create smooth transitions and
 📧 Contact
 Feel free to reach out if you have any questions or suggestions!
 
-Email: your.email@example.com
-GitHub: yourusername
+Email: sanket29136@gmail.com
+
