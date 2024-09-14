@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I’m Sanket Mahapatra a Web Developer dedicated to crafting visually captivating and highly interactive web experiences that engage and inspire. With a keen eye for design and a passion for innovation, I specialize in creating dynamic, user-centered websites that seamlessly blend functionality with aesthetics. My expertise spans modern web technologies and cutting-edge design principles, ensuring each project is both beautiful and performant.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <img src="1.jpg" alt="About Me" class="about-image">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Sanket Mahapatra dedicated web developer with experience in creating interactive websites. I love coding, design, and solving complex problems.</p>
+                <div class="skills">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">React</div>
+                    <!-- Add more skills here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <img src="PROJECT-1.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Tic-Tac-Toe game</h3>
+                    <p>Stylish Tic-Tac-Toe with player names, AI, and enhanced visuals.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="PROJECT-2.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Chess Game</h3>
+                    <p>Classic chess game with smooth gameplay, intuitive interface, and stylish design.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="PROJECT-3.png" alt="Project 3">
+                <div class="project-info">
+                    <h3> Rock-Paper-Scissors Game</h3>
+                    <p>Engaging Rock-Paper-Scissors with smooth gameplay, interactive design, and AI.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="PROJECT-4.png" alt="Project 4">
+                <div class="project-info">
+                    <h3>Gym Fitness Landing Page</h3>
+                    <p>Modern gym landing page with vibrant visuals and clear call-to-action.</p>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
